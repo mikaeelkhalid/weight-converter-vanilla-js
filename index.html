@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Weight Converter</title>
+
+    <style>
+      body {
+        margin-top: 70px;
+        background: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-5">
+            Weight Converter
+          </h1>
+          <form>
+            <div class="form-group">
+              <input
+                id="lbsInput"
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Enter Pounds.."
+              />
+            </div>
+          </form>
+
+          <!-- Form Output -->
+          <div id="output">
+            <!-- Grams Output -->
+            <div class="card bg-primary mb-3">
+              <div class="card-block">
+                <div class="card-body">
+                  <h4 class="text-center">Grams</h4>
+                  <p id="gramsOutput" class="text-center"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kilos Output -->
+            <div class="card bg-info mb-3">
+              <div class="card-block">
+                <div class="card-body">
+                  <h4 class="text-center">Kilogrms</h4>
+                  <p id="kgOutput" class="text-center"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Oz Output -->
+            <div class="card bg-danger mb-3">
+              <div class="card-block">
+                <div class="card-body">
+                  <h4 class="text-center">Ounces</h4>
+                  <p id="ounceOutput" class="text-center"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jsFile.js"></script>
+  </body>
+</html>
